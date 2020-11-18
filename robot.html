@@ -1,0 +1,144 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+    <title>Jakub Czapiewski</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <link rel="stylesheet" href="assets/css/main.css"/>
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css"/>
+    </noscript>
+</head>
+<body class="is-preload">
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+    <!-- Header -->
+    <header id="header">
+        <a href="index.html" class="logo">Czapiewski</a>
+    </header>
+
+    <!-- Nav -->
+    <nav id="nav">
+        <ul class="links">
+            <li><a href="index.html">Moje projekty</a></li>
+            <li><a href="me.html">O mnie</a></li>
+        </ul>
+        <ul class="icons">
+            <li><a href="https://github.com/jakubczapiewski/" class="icon brands fa-github"><span
+                    class="label">GitHub</span></a></li>
+        </ul>
+    </nav>
+
+    <!-- Main -->
+    <div id="main">
+
+
+        <!-- Box -->
+        <h2>Robot utrzymujący czystość w hodowlach bydła</h2>
+        <div class="box">
+
+            <p>
+                <span class="image left"><img src="images/3.jpg" alt=""></span>
+                Celem projektu było zbudowanie robota czyszczącego powierzchnię obory z zalegających odchodów. Byłem
+                odpowiedzialny za zaprojektowanie struktury i napisanie programu umożliwiającego odczyt informacji z
+                czujników oraz podejmowanie decyzji o dalszych ruchach na ich podstawie.
+
+            </p>
+            <p>
+                Robot porusza się autonomicznie po obszarze roboczym na podstawie wcześniej przygotowanej mapy. Po
+                każdym cyklu pracy robot powraca do stacji dokującej gdzie następuje ładowanie.
+                <br>
+                <br>
+
+
+            </p>
+
+
+            <p>
+                <span class="image right">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/0saqt60PBLY" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe></span>
+                Stworzony przeze mnie program ma prostą strukturę, każdy czujnik obsługiwany jest przez osobny wątek,
+                wszystkie odczytane informacje znajdują się we wspólnym obszarze pamięci, główny wątek programu
+                odczytuje
+                je, gdy następuje taka potrzeba i uwzględniając informacje z uprzednio przygotowanej mapy podejmuje
+                decyzje
+                o dalszych ruchach robota.
+                Do poprawy jakości odczytu z IMU użyłem implementacji filtra Kalmana.
+
+            </p>
+            <div>
+                <p>
+            <span class="image left">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/03CLg_DbZzc" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe></span>
+                    Filmy ukazują testy działania silników.
+
+
+                </p>
+            </div>
+            <div class="row">
+                <p>
+                <h5>Użyty sprzęt i technologie
+                </h5>
+                <ul class="alt">
+                    <li>Python 3.7</li>
+                    <li>Raspberry Pi 3 Model B+</li>
+                    <li>Komunikacja z czujnikami odległości, enkoderami, IMU odbywa się poprzez UART i I2C</li>
+
+                </ul>
+                </p>
+            </div>
+        </div>
+
+        <hr/>
+
+        <!-- Preformatted Code -->
+
+        <!-- Footer -->
+        <footer id="footer">
+            <section class="split contact">
+                <section>
+                    <h3>Email</h3>
+                    <p><a href="mailto:jczapiewski110@gmail.com">jczapiewski110@gmail.com</a></p>
+                </section>
+                <section>
+                    <h3>Social</h3>
+                    <ul class="icons alt">
+                        <li><a href="https://github.com/jakubczapiewski/" class="icon brands alt fa-github"><span
+                                class="label">GitHub</span></a></li>
+                    </ul>
+                </section>
+            </section>
+        </footer>
+
+        <!-- Copyright -->
+        <div id="copyright">
+            <ul>
+                <li>&copy; Untitled</li>
+                <li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
